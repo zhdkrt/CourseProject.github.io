@@ -1,0 +1,1794 @@
+@import "_vars";
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  src: url(../../fonts/Inter/Inter.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  src: url(../../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  src: url(../../fonts/Bebas_Neue/ofont.ru_Bebas\ Neue.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background-image: url("../../img/poster img.png");
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: calc(100vw - 16.6vw * 2);
+  margin: 0 auto;
+}
+.header {
+  background-repeat: no-repeat;
+}
+.navbar {
+  padding: 28px 0;
+  align-items: center;
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_extra-large {
+      display: none;
+    }
+    &_extra-extra-large {
+      display: none;
+    }
+    &-items {
+      display: flex;
+      justify-content: space-between;
+      min-width: 947px;
+    }
+    &__primary {
+      display: flex;
+      justify-content: space-between;
+      min-width: 478px + 55px + 82px;
+      align-items: center;
+    }
+    &__secondary {
+      display: flex;
+      gap: 24px;
+    }
+    &__item {
+      list-style-type: none;
+      &-link {
+        text-decoration: none;
+        color: white;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        text-transform: uppercase;
+        &_hover:hover {
+          color: #f57520;
+        }
+      }
+      &-icon {
+        vertical-align: middle;
+        &_hover:hover {
+          filter: invert(50%) sepia(79%) saturate(2514%) hue-rotate(350deg)
+            brightness(107%) contrast(92%);
+        }
+      }
+    }
+    &__burger-icon {
+      vertical-align: middle;
+      &_hover:hover {
+        filter: invert(50%) sepia(79%) saturate(2514%) hue-rotate(350deg)
+          brightness(107%) contrast(92%);
+      }
+    }
+  }
+}
+.poster {
+  padding-top: 70px;
+  padding-bottom: 106px;
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 110px;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      &-title {
+        width: min-content;
+        color: white;
+        font-family: Bebas Neue;
+        font-size: 110px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 123%;
+        letter-spacing: 2.2px;
+      }
+      &-descriprion {
+        width: 630px;
+        color: white;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        letter-spacing: 0.18px;
+      }
+    }
+  }
+  &__form-button {
+    cursor: pointer;
+    border-radius: 10px;
+    background: #f57520;
+    border: none;
+    padding: 16px 45.5px;
+    width: min-content;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123%;
+  }
+  &-swiper {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    &_hover:hover {
+      align-items: center;
+    }
+    &__item {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #4c4c4c;
+      transition: 0.3s;
+      &-1 {
+        width: 18px;
+        height: 18px;
+        background-color: #f57520;
+      }
+      &_hover:hover {
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+.banners {
+  display: flex;
+  justify-content: center;
+  height: 212px;
+}
+.banner {
+  background-color: #131313;
+  &-first {
+    padding: 48px 86px 50px 368px;
+
+    flex: 2 2;
+  }
+  &-second {
+    padding: 48px 102px 88px 48px;
+    flex: 2 1;
+  }
+  &-third {
+    padding: 48px 372px 88px 48px;
+    flex: 2 2;
+    background-color: #2e2e2e;
+  }
+  &__description {
+    &-first {
+      max-width: 293px;
+      text-align: left;
+      color: #fff;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0.24px;
+    }
+    &-second {
+      max-width: 277px;
+      text-align: left;
+      color: #fff;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0.24px;
+    }
+    &-third {
+      width: max-content;
+      color: #fff;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0.24px;
+    }
+  }
+}
+.partner {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 66px;
+  &__img {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+.innovation {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  &__title {
+    margin-bottom: 56px;
+    color: #101010;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+  }
+  &-cards {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  &-card {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 400px;
+    padding: 16px;
+    &__title {
+      &-info {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-flag {
+        margin: -16px 0 0 -16px;
+        border-radius: 10px 0px 10px 0px;
+      }
+      &-availability {
+        align-self: center;
+        color: #f53a20;
+        text-align: right;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+    &:last-of-type {
+      & .innovation-card__title-availability {
+        color: #4d932c;
+      }
+    }
+    &__picture {
+      align-self: center;
+    }
+    &__description {
+      margin-bottom: 24px;
+      align-self: left;
+      width: 349px;
+      color: #101010;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+      letter-spacing: 0.18px;
+    }
+    &__price {
+      color: #777;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 123%;
+    }
+  }
+  &__expand-content {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    color: #777;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+}
+.catalog {
+  &__lower-links {
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    &-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &-3 {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 160px;
+  }
+  padding: 150px 0 0;
+  &__title {
+    margin-bottom: 60px;
+    color: #101010;
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+  &__item {
+    display: flex;
+    border-radius: 10px;
+    &-1 {
+      width: 1280px - 160px;
+      padding: 0 80px;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 37px;
+      background: #f57520;
+      background-image: url("../../img/bike.png");
+      background-repeat: no-repeat;
+      background-position: right 75px center;
+      height: 300px;
+    }
+    &-2 {
+      flex-direction: column;
+      background: #101010;
+      background-image: url("../../img/catalog-bike2.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      padding: 80px 93px 0;
+      height: 458px - 80px;
+    }
+    &-3 {
+      max-width: 400px;
+      min-width: 0;
+      padding: 67px 131px 0 40px;
+      background: #101010;
+      background-image: url("../../img/wheel.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 190px - 67px;
+    }
+    &-4 {
+      flex-direction: column-reverse;
+      height: 252px - 29px;
+      justify-content: space-between;
+      background: #101010;
+      background-image: url("../../img/image 40.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      padding: 0 67px 29px 40px;
+    }
+    &-5 {
+      padding: 40px 118px 0px 40px;
+      background: #101010;
+      flex-direction: column;
+      height: 239px - 40px;
+      background-image: url("../../img/шлем.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+    &-6 {
+      height: 203px - 40px;
+      background: #101010;
+      background-image: url("../../img/велостанок.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 203px - 40px;
+      padding: 40px 118px 0 40px;
+    }
+  }
+  &__item-title {
+    text-decoration: none;
+    width: max-content;
+    color: #fff;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+  }
+}
+.company {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    &-title {
+      vertical-align: top;
+      max-width: 620px;
+      color: #101010;
+      font-family: Bebas Neue;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 123%;
+      letter-spacing: 3.2px;
+    }
+    &-description {
+      max-width: 510px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      &-text {
+        color: #101010;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      &-link {
+        text-decoration: none;
+        color: #b3b3b3;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123%;
+      }
+    }
+  }
+  &__video {
+    max-width: 100vw;
+    max-height: 600px;
+  }
+  &__advantages {
+    margin-top: -5px;
+    padding: 36px 0;
+    background-color: #2e2e2e;
+    &-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &-description {
+        max-width: 274px;
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+      }
+      &-title-info {
+        display: flex;
+        gap: 16px;
+        &-icon {
+          width: 40px;
+          height: 40px;
+        }
+        &-description {
+          color: #fff;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 160%;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+}
+.best-models {
+  background-color: #101010;
+  padding: 80px 0px;
+  &__title {
+    color: #fff;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    max-width: 418px;
+  }
+  &-cards {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin-top: -57px;
+    margin-right: -10px;
+  }
+  &-card {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 400px;
+    padding: 16px;
+    &__title {
+      &-info {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-flag {
+        margin: -16px 0 0 -16px;
+        border-radius: 10px 0px 10px 0px;
+      }
+      &-availability {
+        align-self: center;
+        color: #f53a20;
+        text-align: right;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+    &:last-of-type {
+      & .innovation-card__title-availability {
+        color: #4d932c;
+      }
+    }
+    &__picture {
+      align-self: center;
+    }
+    &__description {
+      margin-bottom: 24px;
+      align-self: left;
+      width: 349px;
+      color: #101010;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+      letter-spacing: 0.18px;
+    }
+    &__price {
+      color: #777;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 123%;
+    }
+  }
+}
+.mountain-bikes {
+  background: #f8f8f8;
+  padding: 115px 0px 80px;
+  &__title {
+    color: #101010;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    max-width: min-content;
+    margin-bottom: 60px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &-cards {
+      display: grid;
+      grid-template-areas:
+        "card-1 card-2"
+        "card-3 card-4";
+      gap: 16px;
+    }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px;
+      background-color: #34312d;
+      border-radius: 10px;
+      width: 302px - 56px;
+      height: 233px - 56px;
+      &-1 {
+        grid-area: card-1;
+      }
+      &-2 {
+        grid-area: card-2;
+      }
+      &-3 {
+        grid-area: card-3;
+      }
+      &-4 {
+        grid-area: card-4;
+      }
+      &-title {
+        display: flex;
+        justify-content: space-between;
+        &-text {
+          align-content: center;
+          color: #fff;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 160%;
+          letter-spacing: 0.2px;
+        }
+      }
+      &-description {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+    &-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-text {
+        width: 510px;
+        color: #4c4c4c;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      &-button {
+        cursor: pointer;
+        border-radius: 10px;
+        background: #f57520;
+        border: none;
+        padding: 16px 45.5px;
+        width: min-content;
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123%;
+        padding: 16px 60px;
+      }
+    }
+  }
+}
+.advantages {
+  padding: 155px 0;
+  &__title {
+    color: #101010;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    margin-bottom: 60px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &-cards {
+      display: grid;
+      grid-template-areas:
+        "advantages_card-1 advantages_card-2"
+        "advantages_card-3 advantages_card-4";
+      gap: 40px;
+    }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px;
+      background-color: #eb6b16;
+      width: 290px - 66px;
+      height: 267px - 66px;
+      padding: 33px;
+      &-1 {
+        grid-area: advantages_card-1;
+      }
+      &-2 {
+        grid-area: advantages_card-2;
+      }
+      &-3 {
+        grid-area: advantages_card-3;
+      }
+      &-4 {
+        grid-area: advantages_card-4;
+      }
+      &-title {
+        color: #fff;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        letter-spacing: 0.2px;
+        width: 94px;
+      }
+      &-description {
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+      }
+      &-link {
+        text-decoration: none;
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123%;
+      }
+    }
+  }
+}
+.equipment {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  &__title {
+    color: #101010;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    margin-bottom: 70px;
+  }
+  &__expand-content {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    color: #777;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+}
+.recent-reviews {
+  padding: 130px 0 80px;
+  &__title {
+    color: #101010;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    margin-bottom: 60px;
+  }
+  &__cards {
+    margin-bottom: 48px;
+    display: flex;
+    gap: 40px;
+  }
+  &__card {
+    width: 400px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #101010;
+    &-picture {
+      border-radius: 10px 10px 0 0;
+    }
+    &-content {
+      padding: 24px 27px 35px;
+      height: 208px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-info {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        &-date {
+          color: #fff;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+        &-hashtag {
+          color: #f57520;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+        &-title {
+          color: #fff;
+          text-overflow: ellipsis;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 160%;
+          letter-spacing: 0.18px;
+        }
+      }
+      &-expand-content {
+        color: #fff;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+  }
+  &__expand-content {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-decoration: none;
+    color: #777;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+}
+.contacts {
+  background: #f8f8f8;
+  padding: 80px 0 80px;
+  &__title {
+    color: #101010;
+    font-family: Bebas Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    letter-spacing: 3.2px;
+    margin-bottom: 60px;
+  }
+  &__map {
+    margin-bottom: 40px;
+  }
+  &__info {
+    &-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-card {
+      width: 215px;
+      display: flex;
+      gap: 16px;
+      &-picture {
+        align-self: self-start;
+      }
+      &-numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      &-number {
+        color: #101010;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+      }
+      &-adress {
+        width: 167px;
+        color: #101010;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+      }
+      &-email {
+        color: #101010;
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+      }
+      &-datetime {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: #101010;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+      }
+    }
+  }
+}
+.feedback {
+  padding: 40px 0;
+  background: #131313;
+  background-image: url("../../img/news.png");
+  background-repeat: no-repeat;
+  background-position: right 12% center;
+  &__info {
+    &-title {
+      color: #fff;
+      font-family: "Bebas Neue";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 123%;
+      letter-spacing: 3.2px;
+      margin-bottom: 32px;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      &-textform {
+        display: flex;
+        gap: 16px;
+      }
+      &-input {
+        width: 346px;
+        height: 46px;
+        box-sizing: border-box;
+        background: #fff;
+        padding: 10px 16px;
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        border: none;
+        border-radius: 5px;
+        &_hover:hover {
+          cursor: pointer;
+        }
+        &_active:active {
+          cursor: text;
+        }
+        &_placeholder::placeholder {
+          color: #b3b3b3;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+        &_focus:focus::-webkit-input-placeholder {
+          color: transparent;
+        }
+      }
+      &-button {
+        cursor: pointer;
+        border-radius: 5px;
+        background: #f57520;
+        border: none;
+        padding: 13px 38px;
+        width: min-content;
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123%;
+      }
+      &-checkbox {
+        width: 24px;
+        height: 24px;
+      }
+      &-label {
+        align-self: center;
+        color: #fff;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      &-checkboxform {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+}
+.footer {
+  &__info {
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    background: #101010;
+    padding-top: 91px;
+    &-links {
+      display: flex;
+      gap: 91px;
+    }
+    &-catalog,
+    &-client,
+    &-contacts {
+      &-links {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 219px;
+        &-title {
+          text-decoration: none;
+          color: #fff;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 160%;
+          letter-spacing: 0.24px;
+        }
+        &-link {
+          width: 215px;
+          display: flex;
+          gap: 16px;
+          &-picture {
+            align-self: center;
+          }
+          &-numbers {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            &-number {
+              color: #fff;
+              text-decoration: none;
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 160%;
+            }
+          }
+          &-adress {
+            width: 167px;
+            color: #fff;
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%;
+          }
+          &-email {
+            color: #fff;
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%;
+          }
+        }
+        &-item {
+          &-link {
+            text-decoration: none;
+            color: #fff;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%;
+          }
+        }
+        &-items {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+  &__company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    &-logo {
+      width: 87px;
+      height: 49px;
+    }
+    &-description {
+      max-width: 289px;
+      color: #b3b3b3;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+    }
+  }
+  &__line {
+    background: #34312d;
+    height: 1px;
+    margin-bottom: 16px;
+  }
+  &__agreement {
+    padding-bottom: 23px;
+    display: flex;
+    gap: 24px;
+    &-copyright {
+      color: #777;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      text-transform: uppercase;
+    }
+    &-text {
+      color: #777;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+}
+
+@media (max-width: 1840px) {
+  .container {
+    max-width: calc(100vw - 127.5px * 2);
+  }
+  .navbar {
+    &-menu {
+      display: none;
+      &_extra-extra-large {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  .advantages {
+    &__content {
+      &-picture {
+        &-1 {
+          margin-left: -(830px - 310px);
+        }
+      }
+    }
+  }
+  .best-models {
+    &__title {
+      max-width: max-content;
+      margin-bottom: 80px + 57px;
+    }
+  }
+  .banners {
+    height: 250px;
+  }
+  .banner {
+    &-first {
+      padding-left: 300px;
+    }
+    &-third {
+      padding-right: 300px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .partner {
+    padding: 0;
+  }
+  .innovation {
+    padding: 56px 0;
+  }
+  .catalog {
+    padding: 56px 0;
+    &__links {
+      margin-bottom: 24px;
+    }
+  }
+  .best-models-cards {
+    margin: 0;
+    justify-content: center;
+  }
+  .banner {
+    &-first {
+      padding-left: 10vw;
+    }
+    &-third {
+      padding-right: 10vw;
+    }
+  }
+  .recent-reviews {
+    &__cards {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .recent-reviews {
+    padding: 60px 0;
+  }
+  .advantages {
+    padding: 60px 0;
+  }
+  .contacts {
+    padding: 60px 0;
+  }
+  .mountain-bikes {
+    &__content {
+      gap: 16px;
+      flex-direction: column;
+      &-cards {
+        justify-content: center;
+      }
+      &-description {
+        gap: 16px;
+        flex-wrap: wrap;
+        align-content: center;
+        &-picture {
+          width: 620px;
+        }
+        &-text {
+          width: 78vw;
+          text-align: justify;
+          align-self: center;
+        }
+        &-form {
+          align-self: center;
+        }
+      }
+    }
+    &__title {
+      max-width: max-content;
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .container {
+    max-width: calc(100vw - 9.5vw * 2);
+  }
+  .navbar {
+    &-menu {
+      display: none;
+      &_extra {
+        &-large {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        &-extra-large {
+          display: none;
+        }
+      }
+    }
+  }
+  .innovation {
+    &-cards {
+      flex-wrap: wrap;
+    }
+    &-card {
+      &-1,
+      &-2 {
+        max-width: none;
+        width: 36vw;
+      }
+      &-3 {
+        min-width: 78vw;
+      }
+    }
+  }
+
+  .best-models {
+    &-cards {
+      flex-wrap: wrap;
+    }
+    &-card {
+      &-1,
+      &-2 {
+        max-width: none;
+        width: 36vw;
+      }
+      &-3 {
+        min-width: 78vw;
+      }
+    }
+  }
+  .catalog {
+    &__lower-links {
+      flex-direction: column;
+    }
+    &__item {
+      width: calc(100vw - 446px);
+      padding: 0 100px;
+      height: 300px;
+      justify-content: center;
+      flex-direction: row;
+      &-2 {
+        flex-direction: row-reverse;
+        background-image: url("../../img/catalog-bike-2-adaptiv.png");
+        background-size: 800px;
+        background-position: left top;
+      }
+      &-3 {
+        background-color: #f57520;
+        max-width: none;
+        background-image: url("../../img/wheel-adaptiv.png");
+        background-size: 800px;
+        background-position: right top;
+      }
+      &-4 {
+        flex-direction: row-reverse;
+        background-image: url("../../img/image 40 adaptiv.png");
+        background-size: 800px;
+        background-position: left top;
+      }
+      &-5 {
+        background-color: #f57520;
+        background-image: url("../../img/шлем adaptiv.png");
+        background-size: 800px;
+        background-position: right top;
+      }
+      &-6 {
+        flex-direction: row-reverse;
+        background-image: url("../../img/велостанок adaptiv.png");
+        background-size: 800px;
+        background-position: left top;
+      }
+
+      &-title {
+        align-self: center;
+        margin: 0;
+      }
+      &-img {
+        &-1 {
+          width: 35vw;
+        }
+      }
+    }
+  }
+  .company {
+    &__advantages {
+      &-cards {
+        justify-content: space-between;
+        gap: 40px;
+      }
+      &-card {
+        &-title-info {
+          align-items: center;
+        }
+      }
+    }
+  }
+  .advantages {
+    &__content {
+      justify-content: center;
+      &-picture {
+        display: none;
+      }
+    }
+  }
+  .footer {
+    &__info {
+      &-links {
+        gap: 0;
+      }
+    }
+  }
+  .advantages {
+    &__content {
+      &-card {
+        width: 34vw;
+        height: 148px;
+      }
+    }
+  }
+  .mountain-bikes {
+    &__content {
+      &-card {
+        width: 34vw;
+        height: 148px;
+      }
+    }
+  }
+  .mountain-bikes {
+    &__content {
+      &-description {
+        &-picture {
+          width: 78vw;
+        }
+      }
+    }
+  }
+  .recent-reviews {
+    &__card {
+      width: 38.7vw;
+      height: 40vw;
+    }
+  }
+  .banner {
+    &__description {
+      font-size: 1.7vw;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .innovation {
+    &-cards {
+      flex-wrap: wrap;
+    }
+    &-card {
+      width: 78vw;
+      &-3 {
+      }
+    }
+  }
+  .mountain-bikes {
+    padding-top: 80px;
+  }
+  .best-models {
+    &-cards {
+      flex-wrap: wrap;
+    }
+    &-card {
+      min-width: 78vw;
+    }
+    &__title {
+      margin-bottom: 80px;
+    }
+  }
+  .title {
+    font-size: 4vw;
+  }
+
+  .company {
+    &__advantages {
+      &-cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+      }
+      &-card {
+        &-title-info {
+          align-items: center;
+        }
+      }
+    }
+    &__info {
+      &-title {
+        font-size: 4vw;
+      }
+    }
+  }
+  .recent-reviews {
+    &__card {
+      width: 81.6vw;
+      height: 62vw;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .navbar {
+    &-menu {
+      &__primary {
+        display: none;
+      }
+    }
+  }
+  .poster {
+    &-info {
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      &__text {
+        align-items: center;
+        &-title {
+          text-align: center;
+        }
+        &-descriprion {
+          text-align: justify;
+          width: 500px;
+        }
+      }
+      margin-bottom: 0;
+    }
+    padding-bottom: 95px;
+    &-swiper {
+      display: none;
+    }
+  }
+  .banners {
+    display: none;
+  }
+  .company {
+    &__info {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      &-description {
+        &-text {
+          align-self: center;
+          width: 56vw;
+          text-align: justify;
+        }
+        &-link {
+          align-self: center;
+        }
+      }
+    }
+  }
+  .catalog {
+    &__item {
+      &-1 {
+        background-image: none;
+      }
+      &-2 {
+        background-image: none;
+      }
+      &-3 {
+        background-image: none;
+      }
+      &-4 {
+        background-image: none;
+      }
+      &-5 {
+        background-image: none;
+      }
+      &-6 {
+        background-image: none;
+      }
+    }
+  }
+  .feedback {
+    &__info {
+      &-form {
+        &-textform {
+          justify-content: center;
+        }
+        &-checkboxform {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .best-models {
+    &__title {
+      max-width: none;
+    }
+  }
+  .mountain-bikes {
+    &__title {
+      max-width: none;
+    }
+  }
+  .contacts {
+    &__info {
+      &-cards {
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+      &-card {
+        flex-basis: 250px;
+      }
+    }
+  }
+  .footer {
+    &__info {
+      &-content {
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    &__company-info {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+  .recent-reviews {
+    &__card {
+      height: 65vw;
+    }
+  }
+}
+@media (max-width: 792px) {
+  .company {
+    &__advantages {
+      &-cards {
+        flex-direction: column;
+        align-content: center;
+      }
+    }
+  }
+  .footer {
+    &__company-info {
+      flex-direction: column;
+      &-description {
+        text-align: center;
+      }
+    }
+    &__info {
+      &-links {
+        gap: 40px;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    &__catalog-links {
+      justify-content: center;
+    }
+  }
+  .recent-reviews {
+    &__card {
+      height: 75vw;
+    }
+  }
+  .contacts {
+    &__info-cards {
+      justify-content: center;
+    }
+  }
+  .advantages {
+    &__content {
+      &-cards {
+        gap: 20px;
+      }
+      &-card {
+        &-title {
+          width: auto;
+        }
+      }
+    }
+  }
+  .mountain-bikes {
+    &__content {
+      &-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &-card {
+        width: 78vw;
+      }
+    }
+  }
+  .feedback {
+    &__info-form {
+      &-textform {
+        flex-direction: column;
+      }
+      &-input {
+        width: auto;
+      }
+      &-button {
+        width: auto;
+      }
+    }
+  }
+  .mountain-bikes {
+    &__content-description-picture {
+      width: 95vw;
+    }
+  }
+  .title {
+    font-size: 14vw;
+  }
+  .innovation-card {
+    min-width: 78vw;
+    &__picture {
+      width: 200px;
+    }
+    &__description {
+      width: auto;
+    }
+  }
+  .advantages {
+    &__content {
+      &-cards {
+        display: flex;
+        flex-direction: column;
+      }
+      &-card {
+        width: 78vw;
+      }
+    }
+  }
+  .poster-info__text-descriprion {
+    width: 69vw;
+  }
+  .poster-info__text-title {
+    font-size: 15vw;
+  }
+  .catalog__item-title {
+    font-size: 11vw;
+  }
+  .best-models-card__picture {
+    width: 200px;
+  }
+  .best-models-card__description {
+    width: auto;
+  }
+  .recent-reviews__card {
+    height: 125vw;
+  }
+  .catalog__item {
+    width: calc(100vw - 246px);
+  }
+  .best-models-card {
+    width: min-content;
+  }
+}
