@@ -1,9 +1,21 @@
 @charset "UTF-8";
 
 @font-face {
+  font-family: "Inter";
+  font-style: normal;
+  src: url(../../fonts/Inter/Inter.ttf);
+}
+
+@font-face {
   font-family: "Roboto";
   font-style: normal;
   src: url(../../fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  src: url(../../fonts/Bebas_Neue/Bebas\ Neue.ttf);
 }
 
 * {
