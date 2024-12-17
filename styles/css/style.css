@@ -334,6 +334,7 @@ body {
 }
 
 .catalog {
+  background-color: #fff;
   padding: 150px 0 0;
 }
 .catalog__lower-links {
@@ -447,6 +448,9 @@ body {
   letter-spacing: 3.2px;
 }
 
+.company {
+  background-color: #fff;
+}
 .company__info {
   display: flex;
   justify-content: space-between;
@@ -706,6 +710,7 @@ body {
 }
 
 .advantages {
+  background: #fff;
   padding: 155px 0;
 }
 .advantages__title {
@@ -807,6 +812,7 @@ body {
 }
 
 .recent-reviews {
+  background: #fff;
   padding: 130px 0 80px;
 }
 .recent-reviews__title {
@@ -1536,6 +1542,10 @@ body {
   }
 }
 @media (max-width: 792px) {
+  body {
+    background-image: none;
+    background: black;
+  }
   .company__video {
     display: none;
   }
