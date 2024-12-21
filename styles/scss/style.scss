@@ -195,6 +195,7 @@ body {
     background-color: #2e2e2e;
   }
   &__description {
+    text-decoration: none;
     &-first {
       max-width: 293px;
       text-align: left;
@@ -1659,6 +1660,12 @@ body {
       display: none;
     }
   }
+  .navbar-menu__burger-icon_hover:hover {
+    filter: none;
+  }
+  button:hover {
+    background: #f57520;
+  }
   .banners {
     display: none;
   }
@@ -1713,6 +1720,10 @@ body {
       }
     }
   }
+  .innovation-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
   .title {
     font-size: 6vw;
     text-align: center;
@@ -1720,6 +1731,10 @@ body {
   .best-models {
     &__title {
       max-width: none;
+    }
+    &-card:hover {
+      box-shadow: none;
+      transform: none;
     }
   }
   .mountain-bikes {
