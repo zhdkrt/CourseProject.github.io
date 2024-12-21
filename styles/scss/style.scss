@@ -140,6 +140,9 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 123%;
+    &_hover:hover {
+      background: #f5a020;
+    }
   }
   &-swiper {
     cursor: pointer;
@@ -257,6 +260,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
+    &__link {
+      text-decoration: none;
+    }
   }
   &-card {
     min-height: 413px;
@@ -314,6 +320,45 @@ body {
       font-style: normal;
       font-weight: 500;
       line-height: 123%;
+    }
+    &-1 {
+      transition: 0.5s;
+    }
+    &-1_hover:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 39px 235px 67px 0px rgba(186, 186, 186, 0),
+        25px 150px 61px 0px rgba(186, 186, 186, 0.01),
+        14px 84px 51px 0px rgba(186, 186, 186, 0.05),
+        6px 38px 38px 0px rgba(186, 186, 186, 0.09),
+        2px 9px 21px 0px rgba(186, 186, 186, 0.1),
+        0px 0px 0px 0px rgba(186, 186, 186, 0.1);
+    }
+    &-2 {
+      transition: 0.5s;
+    }
+    &-2_hover:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 39px 235px 67px 0px rgba(186, 186, 186, 0),
+        25px 150px 61px 0px rgba(186, 186, 186, 0.01),
+        14px 84px 51px 0px rgba(186, 186, 186, 0.05),
+        6px 38px 38px 0px rgba(186, 186, 186, 0.09),
+        2px 9px 21px 0px rgba(186, 186, 186, 0.1),
+        0px 0px 0px 0px rgba(186, 186, 186, 0.1);
+    }
+    &-3 {
+      transition: 0.5s;
+    }
+    &-3_hover:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 39px 235px 67px 0px rgba(186, 186, 186, 0),
+        25px 150px 61px 0px rgba(186, 186, 186, 0.01),
+        14px 84px 51px 0px rgba(186, 186, 186, 0.05),
+        6px 38px 38px 0px rgba(186, 186, 186, 0.09),
+        2px 9px 21px 0px rgba(186, 186, 186, 0.1),
+        0px 0px 0px 0px rgba(186, 186, 186, 0.1);
     }
   }
   &__expand-content {
@@ -550,15 +595,16 @@ body {
     gap: 40px;
     margin-top: -57px;
     margin-right: -10px;
+    &__link {
+      text-decoration: none;
+    }
   }
   &-card {
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
     background-color: #fff;
-    max-width: 400px;
     padding: 16px;
     &__title {
       &-info {
@@ -607,6 +653,45 @@ body {
       font-style: normal;
       font-weight: 500;
       line-height: 123%;
+    }
+    &-1 {
+      transition: 0.5s;
+    }
+    &-1_hover:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 39px 235px 67px 0px rgba(186, 186, 186, 0),
+        25px 150px 61px 0px rgba(186, 186, 186, 0.01),
+        14px 84px 51px 0px rgba(186, 186, 186, 0.05),
+        6px 38px 38px 0px rgba(186, 186, 186, 0.09),
+        2px 9px 21px 0px rgba(186, 186, 186, 0.1),
+        0px 0px 0px 0px rgba(186, 186, 186, 0.1);
+    }
+    &-2 {
+      transition: 0.5s;
+    }
+    &-2_hover:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 39px 235px 67px 0px rgba(186, 186, 186, 0),
+        25px 150px 61px 0px rgba(186, 186, 186, 0.01),
+        14px 84px 51px 0px rgba(186, 186, 186, 0.05),
+        6px 38px 38px 0px rgba(186, 186, 186, 0.09),
+        2px 9px 21px 0px rgba(186, 186, 186, 0.1),
+        0px 0px 0px 0px rgba(186, 186, 186, 0.1);
+    }
+    &-3 {
+      transition: 0.5s;
+    }
+    &-3_hover:hover {
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 39px 235px 67px 0px rgba(186, 186, 186, 0),
+        25px 150px 61px 0px rgba(186, 186, 186, 0.01),
+        14px 84px 51px 0px rgba(186, 186, 186, 0.05),
+        6px 38px 38px 0px rgba(186, 186, 186, 0.09),
+        2px 9px 21px 0px rgba(186, 186, 186, 0.1),
+        0px 0px 0px 0px rgba(186, 186, 186, 0.1);
     }
   }
 }
@@ -705,6 +790,9 @@ body {
         font-weight: 500;
         line-height: 123%;
         padding: 16px 60px;
+        &_hover:hover {
+          background: #f5a020;
+        }
       }
     }
   }
@@ -772,6 +860,7 @@ body {
         line-height: 160%;
       }
       &-link {
+        width: max-content;
         text-decoration: none;
         color: #fff;
         font-family: Inter;
@@ -877,6 +966,7 @@ body {
         }
       }
       &-expand-content {
+        width: max-content;
         color: #fff;
         text-decoration: none;
         font-family: Inter;
@@ -1015,9 +1105,7 @@ body {
         line-height: 160%;
         border: none;
         border-radius: 5px;
-        &_hover:hover {
-          cursor: pointer;
-        }
+
         &_active:active {
           cursor: text;
         }
@@ -1046,8 +1134,12 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: 123%;
+        &_hover:hover {
+          background: #f5a020;
+        }
       }
       &-checkbox {
+        cursor: pointer;
         width: 24px;
         height: 24px;
       }
@@ -1491,8 +1583,6 @@ body {
     }
     &-card {
       width: 78vw;
-      &-3 {
-      }
     }
   }
   .mountain-bikes {
