@@ -879,7 +879,6 @@ body {
   font-weight: 500;
   line-height: 160%;
   letter-spacing: 0.2px;
-  width: 94px;
 }
 .advantages__content-card-description {
   color: #fff;
@@ -902,6 +901,12 @@ body {
 .advantages__content-card-link_hover:hover {
   color: yellow;
 }
+.advantages__content-picture-1 {
+  margin-left: -10px;
+}
+.advantages__content-picture-2 {
+  margin-right: -10px;
+}
 
 .equipment {
   background-color: #f8f8f8;
@@ -915,7 +920,7 @@ body {
   font-weight: 400;
   line-height: 123%;
   letter-spacing: 3.2px;
-  margin-bottom: 70px;
+  margin-bottom: 63px;
 }
 .equipment__expand-content {
   display: block;
@@ -937,7 +942,7 @@ body {
 
 .recent-reviews {
   background: #fff;
-  padding: 130px 0 80px;
+  padding: 140px 0 80px;
 }
 .recent-reviews__title {
   color: #101010;
@@ -1054,7 +1059,7 @@ body {
   font-weight: 400;
   line-height: 123%;
   letter-spacing: 3.2px;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 .contacts__map {
   margin-bottom: 40px;
@@ -1217,7 +1222,7 @@ body {
 .footer__info-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .footer__info-links {
   display: flex;
@@ -1607,30 +1612,50 @@ body {
   .catalog__item-1 {
     background-image: none;
   }
+  .catalog__item-1_hover:hover {
+    transform: none;
+    transition: none;
+  }
   .catalog__item-2 {
     background-image: none;
+  }
+  .catalog__item-2_hover:hover {
+    transform: none;
+    transition: none;
   }
   .catalog__item-3 {
     background-image: none;
   }
+  .catalog__item-3_hover:hover {
+    transform: none;
+    transition: none;
+  }
   .catalog__item-4 {
     background-image: none;
+  }
+  .catalog__item-4_hover:hover {
+    transform: none;
+    transition: none;
   }
   .catalog__item-5 {
     background-image: none;
   }
+  .catalog__item-5_hover:hover {
+    transform: none;
+    transition: none;
+  }
   .catalog__item-6 {
     background-image: none;
+  }
+  .catalog__item-6_hover:hover {
+    transform: none;
+    transition: none;
   }
   .feedback__info-form-textform {
     justify-content: center;
   }
   .feedback__info-form-checkboxform {
     justify-content: center;
-  }
-  .innovation-card:hover {
-    transform: none;
-    box-shadow: none;
   }
   .title {
     font-size: 6vw;
@@ -1667,6 +1692,28 @@ body {
   .navbar-menu__primary {
     display: none;
   }
+  .best-models-card-1_hover:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .best-models-card-2_hover:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .best-models-card-3_hover:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .button:hover {
+    background-color: #f57520;
+  }
+  .innovation-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .innovation__expand-content_hover:hover {
+    color: #777;
+  }
   .banner {
     display: none;
   }
@@ -1676,6 +1723,9 @@ body {
   .company__advantages-cards {
     flex-direction: column;
     align-content: center;
+  }
+  .company__info-description-link_hover:hover {
+    color: #b3b3b3;
   }
   .footer__company-info {
     flex-direction: column;
@@ -1698,6 +1748,12 @@ body {
   .recent-reviews__card-content-info-title {
     font-size: 3vw;
   }
+  .recent-reviews__card-content-expand-content-1_hover:hover, .recent-reviews__card-content-expand-content-2_hover:hover, .recent-reviews__card-content-expand-content-3_hover:hover, .recent-reviews__card-content-expand-content-4_hover:hover {
+    color: #fff;
+  }
+  .recent-reviews__expand-content_hover:hover {
+    color: #777;
+  }
   .contacts__info-cards {
     justify-content: center;
   }
@@ -1706,6 +1762,9 @@ body {
   }
   .advantages__content-card-title {
     width: auto;
+  }
+  .advantages__content-card-link_hover:hover {
+    color: #fff;
   }
   .mountain-bikes__content-cards {
     display: flex;
@@ -1755,6 +1814,9 @@ body {
   .poster-info__text-descriprion {
     width: 69vw;
   }
+  .equipment__expand-content_hover:hover {
+    color: #777;
+  }
   .poster-info__text-title {
     font-size: 15vw;
   }
@@ -1772,6 +1834,24 @@ body {
   }
   .best-models-card {
     width: 78vw;
+  }
+  .footer__info-catalog-links-title_hover:hover, .footer__info-client-links-title_hover:hover, .footer__info-contacts-links-title_hover:hover {
+    color: #fff;
+  }
+  .footer__info-catalog-links-link-numbers-number_hover:hover, .footer__info-client-links-link-numbers-number_hover:hover, .footer__info-contacts-links-link-numbers-number_hover:hover {
+    color: #fff;
+  }
+  .footer__info-catalog-links-link-adress_hover:hover, .footer__info-client-links-link-adress_hover:hover, .footer__info-contacts-links-link-adress_hover:hover {
+    color: #fff;
+  }
+  .footer__info-catalog-links-link-email_hover:hover, .footer__info-client-links-link-email_hover:hover, .footer__info-contacts-links-link-email_hover:hover {
+    color: #fff;
+  }
+  .footer__info-catalog-links-item-link_hover:hover, .footer__info-client-links-item-link_hover:hover, .footer__info-contacts-links-item-link_hover:hover {
+    color: #fff;
+  }
+  .footer__agreement-text_hover:hover {
+    color: #777;
   }
 }
 @media (max-width: 680px) {

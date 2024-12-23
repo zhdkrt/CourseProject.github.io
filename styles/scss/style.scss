@@ -908,7 +908,6 @@ body {
         font-weight: 500;
         line-height: 160%;
         letter-spacing: 0.2px;
-        width: 94px;
       }
       &-description {
         color: #fff;
@@ -932,6 +931,14 @@ body {
         }
       }
     }
+    &-picture {
+      &-1 {
+        margin-left: -10px;
+      }
+      &-2 {
+        margin-right: -10px;
+      }
+    }
   }
 }
 .equipment {
@@ -945,7 +952,7 @@ body {
     font-weight: 400;
     line-height: 123%;
     letter-spacing: 3.2px;
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
   &__expand-content {
     display: block;
@@ -967,7 +974,7 @@ body {
 }
 .recent-reviews {
   background: #fff;
-  padding: 130px 0 80px;
+  padding: 140px 0 80px;
   &__title {
     color: #101010;
     font-family: Bebas Neue;
@@ -1090,7 +1097,7 @@ body {
     font-weight: 400;
     line-height: 123%;
     letter-spacing: 3.2px;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
   &__map {
     margin-bottom: 40px;
@@ -1255,7 +1262,7 @@ body {
     &-content {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     background: #101010;
     padding-top: 91px;
@@ -1479,8 +1486,6 @@ body {
   }
   .advantages {
     padding: 60px 0;
-    &__content {
-    }
   }
   .contacts {
     padding: 60px 0;
@@ -1722,21 +1727,45 @@ body {
   .catalog {
     &__item {
       &-1 {
+        &_hover:hover {
+          transform: none;
+          transition: none;
+        }
         background-image: none;
       }
       &-2 {
+        &_hover:hover {
+          transform: none;
+          transition: none;
+        }
         background-image: none;
       }
       &-3 {
+        &_hover:hover {
+          transform: none;
+          transition: none;
+        }
         background-image: none;
       }
       &-4 {
+        &_hover:hover {
+          transform: none;
+          transition: none;
+        }
         background-image: none;
       }
       &-5 {
+        &_hover:hover {
+          transform: none;
+          transition: none;
+        }
         background-image: none;
       }
       &-6 {
+        &_hover:hover {
+          transform: none;
+          transition: none;
+        }
         background-image: none;
       }
     }
@@ -1753,10 +1782,7 @@ body {
       }
     }
   }
-  .innovation-card:hover {
-    transform: none;
-    box-shadow: none;
-  }
+
   .title {
     font-size: 6vw;
     text-align: center;
@@ -1812,6 +1838,40 @@ body {
       }
     }
   }
+  .best-models-card {
+    &-1 {
+      &_hover:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+    &-2 {
+      &_hover:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+    &-3 {
+      &_hover:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .button:hover {
+    background-color: #f57520;
+  }
+  .innovation {
+    &-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    &__expand-content {
+      &_hover:hover {
+        color: #777;
+      }
+    }
+  }
   .banner {
     display: none;
   }
@@ -1823,6 +1883,13 @@ body {
       &-cards {
         flex-direction: column;
         align-content: center;
+      }
+    }
+    &__info {
+      &-description-link {
+        &_hover:hover {
+          color: #b3b3b3;
+        }
       }
     }
   }
@@ -1851,6 +1918,21 @@ body {
       &-content-info-title {
         font-size: 3vw;
       }
+      &-content-expand-content {
+        &-1,
+        &-2,
+        &-3,
+        &-4 {
+          &_hover:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    &__expand-content {
+      &_hover:hover {
+        color: #777;
+      }
     }
   }
   .contacts {
@@ -1866,6 +1948,11 @@ body {
       &-card {
         &-title {
           width: auto;
+        }
+        &-link {
+          &_hover:hover {
+            color: #fff;
+          }
         }
       }
     }
@@ -1904,8 +1991,6 @@ body {
       }
     }
   }
-  .mountain-bikes {
-  }
   .title {
     font-size: 14vw;
   }
@@ -1932,6 +2017,9 @@ body {
   .poster-info__text-descriprion {
     width: 69vw;
   }
+  .equipment__expand-content_hover:hover {
+    color: #777;
+  }
   .poster-info__text-title {
     font-size: 15vw;
   }
@@ -1950,6 +2038,54 @@ body {
   }
   .best-models-card {
     width: 78vw;
+  }
+  .footer {
+    &__info {
+      &-catalog,
+      &-client,
+      &-contacts {
+        &-links {
+          &-title {
+            &_hover:hover {
+              color: #fff;
+            }
+          }
+          &-link {
+            &-numbers {
+              &-number {
+                &_hover:hover {
+                  color: #fff;
+                }
+              }
+            }
+            &-adress {
+              &_hover:hover {
+                color: #fff;
+              }
+            }
+            &-email {
+              &_hover:hover {
+                color: #fff;
+              }
+            }
+          }
+          &-item {
+            &-link {
+              &_hover:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__agreement {
+      &-text {
+        &_hover:hover {
+          color: #777;
+        }
+      }
+    }
   }
 }
 @media (max-width: 680px) {
