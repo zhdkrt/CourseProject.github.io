@@ -20,6 +20,9 @@
         align-items: center;
       }
       div {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
         text-align: center;
       }
       h1 {
@@ -30,7 +33,9 @@
         line-height: normal;
         margin: 0;
       }
-      span {
+      span,
+      a {
+        text-decoration: none;
         color: #f4a261;
         font-family: Inter;
         font-size: 5vw;
@@ -38,12 +43,36 @@
         font-weight: 400;
         line-height: normal;
       }
+      a {
+        font-size: 3vw;
+      }
+      button {
+        cursor: pointer;
+        border-radius: 10px;
+        background: yellow;
+        border: none;
+        padding: 16px 45.5px;
+        width: min-content;
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 123%;
+      }
+      button:hover {
+        background: #f5a020;
+      }
     </style>
   </head>
   <body>
     <div class="404-error">
       <h1 class="404-error__title">404</h1>
-      <span class="404-error__description">NOT FOUND</span>
+      <span class="404-error__description">Не найдено</span>
+      <form class="404-error__form" action="./index.html">
+        <button class="404-error__button">Вернуться домой</button>
+      </form>
     </div>
   </body>
 </html>
+
